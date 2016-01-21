@@ -49,12 +49,12 @@ while jugador and villano :
     
     if eleccion_villano in opciones[eleccion_jugador]:
         print("Ganaste :_(!")
-        --villano
+        villano -= 1
     elif eleccion_jugador == eleccion_villano:
         print("Esto es extraño, de algún modo me leiste la cpu y elegimos lo mismo :/")
     else:
         print("Perdiste >:D!")
-        --jugador
+        jugador -= 1
     print("Te quedan %d vida(s)" %(jugador))
     print("Vidas de la máquina: %d" %(villano))
     
