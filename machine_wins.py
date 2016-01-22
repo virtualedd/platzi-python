@@ -17,6 +17,8 @@
 #   *Uso de comentarios
 #   *Uso de 4 espacios para la indentación de los bloques
 
+#PYTHON 3
+
 from random import choice
 
 opciones = { 'piedra': ("tijera", "lagarto"),
@@ -38,7 +40,7 @@ while jugador and villano :
     #elecciones
     eleccion_jugador = input("\nEscribe tu opción(piedra-papel-tijera-lagarto-spock): ")
     
-    if eleccion_jugador not in tuple(opciones.keys()):
+    if eleccion_jugador not in opciones.keys():
         print("Hey!, ingresaste una opción inválida.")
         print("Recuerda, la palabra debe estar escrita tal como aparece en los paréntesis")
         continue #finaliza esta vuelta del bucle aquí y inicia una nueva.
